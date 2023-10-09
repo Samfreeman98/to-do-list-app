@@ -10,4 +10,12 @@ function newItem() {
     let list = $("#list");
     list.append(li);
   }
+
+  //Function to strike out list item when double clicked
+  function crossOut() {
+    li.toggleClass("strike");
+  }
+
+  li.on("dblclick", crossOut);
+
 }
